@@ -51,10 +51,10 @@ $(document).ready(function() {
     })
     
 });
-
+/*
 function pokeSubmit(){
     
-    var pokeURL = "http://pokeapi.co/api/v1/pokemon/" +;
+    var pokeURL = "http://pokeapi.co/api/v1/pokemon/" ;
     $.getJSON(pokeURL, function(data){
         var pokeID = data.national_id;
         var pokeName = data.name;
@@ -68,7 +68,7 @@ function pokeSubmit(){
         console.log("Type 1: ", pokeType1);
         console.log("Type 2: ", pokeType2);
     });
-}
+}*/
 
 
 
