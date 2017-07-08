@@ -51,8 +51,8 @@ box-shadow: 0px 20px 20px 10px rgba(0,0,0,1);
 	right: -100px;
 	z-index: 100
 }
-.prueba{
-	position: fixed;
+.pruebas{
+	margin-top: 400px;
 }
 .nav a {
 	font-family: 'Monoton', cursive;

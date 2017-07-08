@@ -1,11 +1,5 @@
 $(document).ready(function() {
-
- /*  for(var i = 1; i < 500; i++) {
-       var pokePic = $("<img src=http://pokeapi.co/media/img/" + i + ".png id=" + i + ">");
-        $('div.pokemon').append(pokePic);
-   }*/
-
-    $.ajax({
+   $.ajax({
             url: 'http://pokeapi.co/api/v2/pokemon/',
             type: 'GET',
             dataType: 'json',
@@ -49,6 +43,27 @@ $(document).ready(function() {
         })
         console.log("success");
     })
+    $.ajax({
+        url: 'http://pokeapi.co/api/v2/pokemon-species/',
+        type: 'GET',
+        dataType: 'json',
+        data: {limit: '20'},
+    })
+    .done(function(respuesta) {
+        var p = $(".pruebas");
+        for(var i = 0; i < respuesta.results.length; i++) {
+            p.append(respuesta.results[i].name)
+        }
+        console.log(respuesta)
+        console.log("specie");
+    })
+    .fail(function() {
+        console.log("error");
+    })
+    .always(function() {
+        console.log("complete");
+    });
+    
     
 });
 /*
