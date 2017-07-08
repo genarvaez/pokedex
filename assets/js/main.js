@@ -1,6 +1,6 @@
 $(document).ready(function() {
    $.ajax({
-            url: 'http://pokeapi.co/api/v2/pokemon/',
+            url: 'https://pokeapi.co/api/v2/pokemon/',
             type: 'GET',
             dataType: 'json',
             data: {limit: '19'},
@@ -22,7 +22,7 @@ $(document).ready(function() {
             console.log("complete");
     });
     $.ajax({
-        url: 'http://pokeapi.co/api/v2/pokemon/',
+        url: 'https://pokeapi.co/api/v2/pokemon/',
         type: 'GET',
         dataType: 'json',
         data: {limit: '19'},
@@ -43,6 +43,8 @@ $(document).ready(function() {
         })
         console.log("success");
     })
+})
+    /*
     $.ajax({
         url: 'http://pokeapi.co/api/v2/pokemon-species/',
         type: 'GET',
